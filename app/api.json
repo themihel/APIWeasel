@@ -1,0 +1,50 @@
+{
+  "name": "Your API",
+  "version": "1.0.0",
+  "path": "http://chucknorris.io/api/",
+  "routes": [
+    {
+      "path": "/jokes/new",
+      "method": "post",
+      "description": "Add new special move",
+      "params": [
+        {
+          "name": "jokeText",
+          "type": "String",
+          "description": "Insert funny Chuck Norris joke",
+          "required": true
+        },
+        {
+          "name": "jokeCreativity",
+          "type": "int",
+          "description": "Should be > 0"
+        }
+      ]
+    },
+    {
+      "path": "/jokes/",
+      "method": "get",
+      "description": "Get all ChuckNorris jokes",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to access to verify user"
+      },
+      "response": {
+        "name": "jokes",
+        "type": "Array",
+        "description": "List of all available jokes"
+      }
+    },
+    {
+      "path": "/joke/:jokeId",
+      "method": "delete",
+      "description": "Delete bad Chuck Norris joke",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to verify Chuck Norris"
+      }
+    }
+  ]
+}

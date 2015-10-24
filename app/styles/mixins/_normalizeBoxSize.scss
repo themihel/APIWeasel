@@ -1,0 +1,5 @@
+// normalize boxsize (remove margin and padding)
+@mixin normalizeBoxSize() {
+	margin: 0;
+	padding: 0;
+}

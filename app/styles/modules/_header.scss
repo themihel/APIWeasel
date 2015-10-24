@@ -1,0 +1,14 @@
+header {
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $color-primary;
+  color: $color-white-primary;
+  font-size: $font-size-extra-large;
+  font-weight: $font-weight-medium;
+  padding-top: 20px;
+
+  .path {
+    font-size: 0.5em;
+  }
+}

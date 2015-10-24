@@ -1,0 +1,30 @@
+// box sizing
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+// main
+body {
+	@include normalizeBoxSize();
+	font-family: $font-family;
+  background-color: $color-white-secondary;
+  overflow-x: hidden;
+  font-weight: $font-weight-regular;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix {
+	@include clearfix();
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

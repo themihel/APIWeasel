@@ -1,0 +1,23 @@
+.searchBox {
+  color: $color-black-secondary;
+  display: inline-flex;
+  vertical-align: middle;
+  background-color: $color-white-primary;
+
+  &:hover{
+    color: $color-black-primary;
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  i {
+    line-height: 40px;
+    margin-right: 5px;
+  }
+}

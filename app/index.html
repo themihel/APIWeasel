@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="apiweasel">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <!-- Title -->
+  <title>APIWeasel</title>
+  <!-- Scripts -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body ng-controller="apiWeaselCtrl">
+  <!-- header -->
+  <header>
+    <div>{{apiData.name}} - APIWeasel</div>
+    <div class="path">{{apiData.path}}</div>
+  </header>
+
+  <!-- Searchbox -->
+  <div class="searchBoxWrapper">
+    <div class="searchBox">
+      <i class="material-icons">search</i>
+      <input type="text" ng-model="searchItem" placeholder="Filtern ..." autofocus>
+    </div>
+  </div>
+
+  <!-- Error fetching data -->
+  <div class="box boxError" ng-if="apiError">
+    Error fetching data
+  </div>
+
+  <!-- Api routes -->
+  <div class="apiRoute box" ng-repeat="api in apiData.routes | filter:searchItem">
+    <!-- Method / Path -->
+    <div class="line lineHead">
+      <div class="column method">{{api.method}}</div>
+      <div class="column path">{{api.path}}</div>
+    </div>
+    <!-- Description -->
+    <div class="line" ng-if="api.description">
+      <div class="column lineDesc">Description</div>
+      <div class="column desc">{{api.description}}</div>
+    </div>
+    <!-- Header-data -->
+    <div class="line" ng-if="api.header">
+      <div class="column lineDesc">Header</div>
+      <div class="column header columnData">
+        <span class="name" ng-if="api.header.name">{{api.header.name}}</span>
+        <span class="type" ng-if="api.header.type">{{api.header.type}}</span>
+        <span class="desc" ng-if="api.header.description">{{api.header.description}}</span>
+      </div>
+    </div>
+    <!-- Params -->
+    <div class="line" ng-if="api.params">
+      <div class="column lineDesc">Params</div>
+      <div class="column params columnData">
+        <div class="param" ng-repeat="param in api.params">
+          <span class="name" ng-if="param.name">{{param.name}}</span>
+          <span class="type" ng-if="param.type">{{param.type}}</span>
+          <span class="desc" ng-if="param.description">{{param.description}}</span>
+          <span class="required" ng-if="param.required">required</span>
+        </div>
+      </div>
+    </div>
+    <!-- Response -->
+    <div class="line" ng-if="api.response">
+      <div class="column lineDesc">Response</div>
+      <div class="column response columnData">
+        <span class="name" ng-if="api.response.name">{{api.response.name}}</span>
+        <span class="type" ng-if="api.response.type">{{api.response.type}}</span>
+        <span class="desc" ng-if="api.response.description">{{api.response.description}}</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
