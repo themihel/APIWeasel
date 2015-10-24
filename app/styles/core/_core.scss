@@ -11,20 +11,3 @@ body {
   overflow-x: hidden;
   font-weight: $font-weight-regular;
 }
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
-.clearfix {
-	@include clearfix();
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
