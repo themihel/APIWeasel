@@ -28,7 +28,7 @@
       "header": {
         "name": "token",
         "type": "String",
-        "description": "Token to access to verify user"
+        "description": "Token to verify user"
       },
       "response": {
         "name": "jokes",
