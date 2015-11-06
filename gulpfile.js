@@ -35,7 +35,7 @@ gulp.task('styles', function() {
 	.pipe(concat('app.css'))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('.tmp/styles/'))
-	.pipe(minifyCSS())
+	.pipe(minifyCSS({processImport: false}))
   .pipe(header(banner, {pkg: pkg}))
 	.pipe(gulp.dest('dist/styles/'))
   .pipe(size({title: 'styles'}));
