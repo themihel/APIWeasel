@@ -1,0 +1,29 @@
+@media screen and (max-width: 800px) {
+  .box {
+    width: 95%;
+  }
+
+  .searchBoxWrapper {
+    .searchBox {
+      margin: 0 auto;
+      margin-left: 2.5%;
+      width: 95%;
+    }
+  }
+
+  .line {
+    &:not(:nth-child(1)) {
+      .column {
+        width: 100%;
+
+        &:nth-child(1) {
+          border-bottom: 1px dashed $color-black-primary;
+        }
+      }
+    }
+  }
+
+  .apiRoute {
+    margin-bottom: 40px;
+  }
+}
