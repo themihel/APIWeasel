@@ -3,7 +3,7 @@ Simple API-Documentation system
 
 ![Screenshot](http://img.themihel.me/APIWeasel/apiScreen.jpg)
 
-Easy way to display your API-Routes. Just format them in a simple JSON-File and make the accessible via APIWeasel.
+Easy way to display your API-Routes. Just format them in a simple JSON-File and make it accessible via APIWeasel.
 
 # Installation
 1. Download repo
