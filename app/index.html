@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="apiweasel">
 <head>
+
   <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <meta name="theme-color" content="#3F51B5">
+
   <!-- Title -->
   <title>APIWeasel</title>
-  <!-- Scripts -->
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="scripts/app.js"></script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="styles/app.css">
+
 </head>
 <body ng-controller="apiWeaselCtrl">
   <!-- header -->
@@ -23,7 +24,7 @@
   <!-- Searchbox -->
   <div class="searchBoxWrapper">
     <div class="searchBox">
-      <i class="material-icons">search</i>
+      <img src="images/ic_search_black_24px.svg" alt="Search - Icon">
       <input type="search" ng-model="searchItem" placeholder="Filtern ..." autofocus>
     </div>
   </div>
@@ -76,6 +77,11 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Scripts -->
+  <script src="bower_components/angular/angular.min.js" async></script>
+  <script src="scripts/app.js" async></script>
 
 </body>
 </html>
