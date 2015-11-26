@@ -5,7 +5,7 @@ var del = require('del');
 var size = require('gulp-size');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var minifyCSS = require('gulp-minify-css');
+var uglifycss = require('gulp-uglifycss');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var jslint = require('gulp-jslint');
@@ -33,9 +33,9 @@ gulp.task('styles', function() {
 	.pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer())
 	.pipe(concat('app.css'))
-  .pipe(sourcemaps.write())
+  .pipe(sourcemaps.write('../maps'))
   .pipe(gulp.dest('.tmp/styles/'))
-	.pipe(minifyCSS({processImport: false}))
+  .pipe(uglifycss())
   .pipe(header(banner, {pkg: pkg}))
 	.pipe(gulp.dest('dist/styles/'))
   .pipe(size({title: 'styles'}));
