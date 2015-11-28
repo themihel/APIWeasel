@@ -2,13 +2,51 @@
 <html lang="en" ng-app="apiweasel">
 <head>
 
-  <!-- Meta -->
+  <!-- Charset -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta name="theme-color" content="#3F51B5">
 
   <!-- Title -->
   <title>APIWeasel</title>
+
+  <!-- Basic Meta -->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="theme-color" content="#3F51B5">
+  <meta name="application-name" content="APIWeasel">
+  <meta name="description" content="Simple API-Documentation system.">
+  <meta name="author" content="Mischa Helfenstein">
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="APIWeasel" />
+  <meta property="og:description" content="Simple API-Documentation system." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/themihel/APIWeasel" />
+  <meta property="og:image" content="http://img.themihel.me/APIWeasel/APIWeasel_Header_Image.jpg" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@themihel">
+  <meta name="twitter:title" content="APIWeasel">
+  <meta name="twitter:description" content="Simple API-Documentation system.">
+  <meta name="twitter:image" content="http://img.themihel.me/APIWeasel/APIWeasel_Header_Image.jpg">
+  <meta name="twitter:twitter:creator" content="@themihel">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="APIWeasel">
+  <link rel="icon" sizes="192x192" href="images/launcher-icons/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="APIWeasel">
+  <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/launcher-icons/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3F51B5">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/app.css">
@@ -24,7 +62,7 @@
   <!-- Searchbox -->
   <div class="searchBoxWrapper">
     <div class="searchBox">
-      <img src="images/ic_search_black_24px.svg" alt="Search - Icon">
+      <img src="images/icons/ic_search_black_24px.svg" alt="Search - Icon">
       <input type="search" ng-model="searchItem" placeholder="Filtern ..." autofocus>
     </div>
   </div>
