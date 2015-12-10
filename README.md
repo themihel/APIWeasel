@@ -1,5 +1,8 @@
 # APIWeasel
-Simple API-Documentation system
+
+![Dev-Dep](https://david-dm.org/themihel/APIWeasel/dev-status.svg)
+
+Simple API-Documentation system | [Demo](http://themihel.github.io/APIWeasel/)
 
 ![Screenshot](http://img.themihel.me/APIWeasel/apiScreen.jpg)
 
