@@ -1,8 +1,9 @@
 # APIWeasel
 
+![Build status](https://api.travis-ci.org/themihel/APIWeasel.svg)
 ![Dev-Dep](https://david-dm.org/themihel/APIWeasel/dev-status.svg)
 
-Simple API-Documentation system | [Demo](http://themihel.github.io/APIWeasel/)
+Simple API-Documentation system | [Demo](https://apiweasel.themihel.me)
 
 ![Screenshot](http://img.themihel.me/APIWeasel/apiScreen.jpg)
 
