@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "4.1"
+install:
+  - npm install
+  - bower install
+script:
+  - gulp dist
+after_success:
+  - ./deploy.sh
