@@ -105,6 +105,13 @@ gulp.task('copyJson', function() {
     .pipe(size({title: 'copyJson'}));
 });
 
+// Gulp-Task: copyServiceWorker
+gulp.task('copyServiceWorker', function() {
+  return gulp.src('app/sw.js')
+    .pipe(gulp.dest('dist/'))
+    .pipe(size({title: 'copyServiceWorker'}));
+});
+
 // Gulp-Task: bower_components
 gulp.task('bower', function() {
   return gulp.src('bower_components/**/*')
@@ -156,4 +163,4 @@ gulp.task('watch', function() {
 gulp.task('default', ['styles', 'jslint', 'scripts']);
 
 // Gulp-Task: preserve
-gulp.task('dist', ['html', 'copyJson', 'styles', 'jslint', 'scripts', 'images', 'bower']);
+gulp.task('dist', ['html', 'copyJson', 'copyServiceWorker', 'styles', 'jslint', 'scripts', 'images', 'bower']);
