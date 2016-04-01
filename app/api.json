@@ -1,49 +1,147 @@
 {
-  "name": "Your API",
-  "version": "1.0.0",
-  "path": "http://chucknorris.io/api/",
+  "name": "Movie API",
+  "version": "1.0.1",
+  "path": "https://movies.io/api/",
   "routes": [
     {
-      "path": "/jokes/new",
-      "method": "post",
-      "description": "Add new special move",
-      "params": [
-        {
-          "name": "jokeText",
-          "type": "String",
-          "description": "Insert funny Chuck Norris joke",
-          "required": true
-        },
-        {
-          "name": "jokeCreativity",
-          "type": "int",
-          "description": "Should be > 0"
-        }
-      ]
-    },
-    {
-      "path": "/jokes/",
+      "path": "/movies",
       "method": "get",
-      "description": "Get all ChuckNorris jokes",
+      "description": "Get all movies",
       "header": {
         "name": "token",
         "type": "String",
         "description": "Token to verify user"
       },
       "response": {
-        "name": "jokes",
+        "name": "movies",
         "type": "Array",
-        "description": "List of all available jokes"
+        "description": "List of all movies"
       }
     },
     {
-      "path": "/joke/:jokeId",
-      "method": "delete",
-      "description": "Delete bad Chuck Norris joke",
+      "path": "/movies/new",
+      "method": "post",
+      "description": "Add movie",
       "header": {
         "name": "token",
         "type": "String",
-        "description": "Token to verify Chuck Norris"
+        "description": "Token to verify user"
+      },
+      "params": [
+        {
+          "name": "name",
+          "type": "String",
+          "description": "Title of the movie",
+          "required": true
+        },
+        {
+          "name": "length",
+          "type": "Number",
+          "description": "Length of the movie",
+          "required": true
+        },
+        {
+          "name": "actors",
+          "type": "Array",
+          "description": "Array with all actors"
+        }
+      ]
+    },
+    {
+      "path": "/movies/:movieId",
+      "method": "put",
+      "description": "Change movie information",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to verify user"
+      },
+      "params": [
+        {
+          "name": "name",
+          "type": "String",
+          "description": "Title of the movie"
+        },
+        {
+          "name": "length",
+          "type": "Number",
+          "description": "Length of the movie"
+        },
+        {
+          "name": "actors",
+          "type": "Array",
+          "description": "Array with all actors"
+        }
+      ]
+    },
+    {
+      "path": "/movies/:movieId",
+      "method": "delete",
+      "description": "Delete movie",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to verify user"
+      }
+    },
+    {
+      "path": "/movies/:genreId",
+      "method": "get",
+      "description": "Get movies by genre",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to verify user"
+      },
+      "response": {
+        "name": "movies",
+        "type": "Array",
+        "description": "List of all movies with specific genre"
+      }
+    },
+    {
+      "path": "/genres",
+      "method": "get",
+      "description": "Get all genres",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to verify user"
+      },
+      "response": {
+        "name": "genres",
+        "type": "Array",
+        "description": "List of all genres"
+      }
+    },
+    {
+      "path": "/actors",
+      "method": "get",
+      "description": "Get all actors",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to verify user"
+      },
+      "response": {
+        "name": "actors",
+        "type": "Array",
+        "description": "List of all actors"
+      }
+    },
+    {
+      "path": "/actors/:actorId",
+      "method": "get",
+      "description": "Get information about actor",
+      "header": {
+        "name": "token",
+        "type": "String",
+        "description": "Token to verify user"
+      },
+      "response": {
+        "name": "actor",
+        "type": "Array",
+        "description": "Information about actor"
       }
     }
   ]
