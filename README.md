@@ -10,13 +10,13 @@ Simple API-Documentation system | [Demo](https://apiweasel.themihel.me)
 Easy way to display your API-Routes. Just format them in a simple JSON-File and make it accessible via APIWeasel.
 
 # Features
-[x] Responsive design
-[x] Searchable API-Routes
-[x] Print styles
-[x] Offline mode
-[x] Install to homescreen support
-[x] Service Worker
-[x] Easy to customize
+- [x] Responsive design
+- [x] Searchable API-Routes
+- [x] Print styles
+- [x] Offline mode
+- [x] Install to homescreen support
+- [x] Service Worker
+- [x] Easy to customize
 
 # Installation
 1. Download repo
