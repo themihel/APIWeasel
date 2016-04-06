@@ -9,13 +9,23 @@ Simple API-Documentation system | [Demo](https://apiweasel.themihel.me)
 
 Easy way to display your API-Routes. Just format them in a simple JSON-File and make it accessible via APIWeasel.
 
+# Features
+[x] Responsive design
+[x] Searchable API-Routes
+[x] Print styles
+[x] Offline mode
+[x] Install to homescreen support
+[x] Service Worker
+[x] Easy to customize
+
 # Installation
 1. Download repo
 2. Install dependencies
 3. Add API-Information
 4. Serve or upload application
+5. Offline support
 
-## 1.Download repo
+## 1. Download repo
 Via 'git clone' or 'download .zip'.
 
 ## 2. Install dependencies
@@ -40,3 +50,6 @@ For deploying this package first run:
 gulp dist
 ```
 and upload all files from the /dist directory to your server!
+
+## 5. Offline support
+HTTPS Connection is needed for offline support
