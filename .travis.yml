@@ -11,5 +11,5 @@ after_success:
 deploy:
   on: master
   provider: surge
-  project: ./dist/
+  project: dist/
   domain: apiweasel.themihel.me
