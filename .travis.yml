@@ -10,6 +10,7 @@ after_success:
   - touch dist/.surgeignore && echo '!bower_components/' > dist/.surgeignore
 deploy:
   on: master
+  skip_cleanup: true
   provider: surge
   project: dist/
   domain: apiweasel.themihel.me
