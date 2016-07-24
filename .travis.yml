@@ -1,7 +1,4 @@
 language: node_js
-branches:
-  only:
-    - master
 node_js:
   - "4.1"
 install:
@@ -11,4 +8,8 @@ script:
   - gulp dist
 after_success:
   - touch dist/.surgeignore && echo '!bower_components/' > dist/.surgeignore
-  - surge --project ./dist --domain apiweasel.themihel.me
+deploy:
+  on: master
+  provider: surge
+  project: ./dist/
+  domain: apiweasel.themihel.me
