@@ -1,0 +1,21 @@
+.viewSource {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: $color-primary;
+  color: $color-white-primary;
+  padding: 10px;
+  border-radius: $border-radius-main;
+  text-decoration: none;
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.5);
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: lighten($color-primary, 8);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
