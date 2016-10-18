@@ -1,0 +1,15 @@
+.offline {
+  transition: all .3s ease;
+
+  header, .method, .viewSource {
+    background-color: $color-black-secondary;
+  }
+
+  .offlineError {
+    display: block;
+  }
+}
+
+.offlineError {
+  display: none;
+}

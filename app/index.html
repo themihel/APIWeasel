@@ -68,6 +68,11 @@
   </div>
 
   <!-- Error fetching data -->
+  <div class="box boxError offlineError">
+    Please note, you're currently offline!
+  </div>
+
+  <!-- Error fetching data -->
   <div class="box boxError" ng-if="apiError">
     Error fetching data
   </div>
@@ -128,6 +133,14 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');
     }
+
+    <!-- Offline View -->
+    function updateIndicator() {
+      document.querySelector('body').classList.toggle('offline');
+    }
+
+    window.addEventListener('online',  updateIndicator);
+    window.addEventListener('offline', updateIndicator);
   </script>
 
 </body>
