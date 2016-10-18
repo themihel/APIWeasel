@@ -123,16 +123,10 @@
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="scripts/app.js"></script>
 
-  <!-- ServiceWorker -->
   <script>
+    <!-- ServiceWorker -->
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-      .then(function() {
-        console.log('ServiceWorker registered!');
-      })
-      .catch(function() {
-        console.log('ServiceWorker not registered!');
-      });
+      navigator.serviceWorker.register('/sw.js');
     }
   </script>
 
