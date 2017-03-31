@@ -10,19 +10,19 @@
     "url": "git://github.com/themihel/APIWeasel.git"
   },
   "devDependencies": {
-    "bower": "^1.7.7",
+    "bower": "^1.8.0",
     "browser-sync": "^2.18.8",
-    "del": "^2.2.0",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-header": "^1.2.2",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
     "gulp-imagemin": "^3.2.0",
-    "gulp-jslint": "^1.0.5",
-    "gulp-sass": "^3.0.0",
+    "gulp-jslint": "^1.0.10",
+    "gulp-sass": "^3.1.0",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.5.0",
-    "gulp-uglify": "^2.0.0",
+    "gulp-uglify": "^2.1.2",
     "gulp-uglifycss": "^1.0.8"
   }
 }
