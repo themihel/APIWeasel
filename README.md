@@ -2,6 +2,7 @@
 
 [![Build status](https://api.travis-ci.org/themihel/APIWeasel.svg?branch=master)](https://travis-ci.org/themihel/APIWeasel)
 ![Dev-Dep](https://david-dm.org/themihel/APIWeasel/dev-status.svg?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/themihel/APIWeasel.svg)](https://greenkeeper.io/)
 
 Simple API-Documentation system | [Demo](https://apiweasel.themihel.me)
 
