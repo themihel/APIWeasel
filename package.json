@@ -17,7 +17,7 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^1.8.8",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-imagemin": "^4.0.0",
     "gulp-jslint": "^1.0.10",
     "gulp-sass": "^3.1.0",
     "gulp-size": "^2.1.0",
