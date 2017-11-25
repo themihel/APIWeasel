@@ -54,7 +54,3 @@ and upload all files from the /dist directory to your server!
 
 ## 5. Offline support
 HTTPS Connection is needed for offline support
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/trD8X4GH7wM31Z1MwbbTYCbt/themihel/APIWeasel'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/trD8X4GH7wM31Z1MwbbTYCbt/themihel/APIWeasel.svg' />
-</a>
